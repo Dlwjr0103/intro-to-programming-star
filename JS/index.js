@@ -16,3 +16,34 @@ for (let i = 0; i<skills.length; i++) {
      skill.innerHTML = skills[i] 
      skillsList.appendChild(skill);
 };
+
+let messageForm = document.querySelector('[name="leave_message"]')
+messageForm.addEventListener("submit", (event) => {
+     event.preventDefault();
+     let leaveName = messageForm.name.value
+     let leaveEmail = messageForm.email.value
+     let leaveMessage = messageForm.message.value
+
+     console.log(leaveName + ",", leaveEmail + ",", leaveMessage)
+     
+     let messageSection = document.querySelector('#messages')
+     let messageList = messageSection.querySelector('ul')
+     let newMessage = document.createElement('li')
+
+     newMessage.innerHTML = `<a href=mailto:${leaveEmail}>${leaveName}</a> <span> wrote: ${leaveMessage}</span>`
+     
+     
+
+     let removeButton = document.createElement('button')
+     removeButton.innerText = "remove" 
+     removeButton.type = "button"
+     removeButton.addEventListener('click', () =>{
+          let entry = removeButton.parentNode
+          entry.remove();
+     })
+     newMessage.appendChild(removeButton)
+     messageList.appendChild(newMessage)
+     messageForm.reset();
+}
+
+);
