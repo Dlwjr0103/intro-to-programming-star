@@ -1,0 +1,161 @@
+
+
+body{
+    background-color:snow;
+    color: darkslategray ;
+    font-size: 20px;
+    font-family:sans-serif;
+}
+.heading{
+    font-family: cursive;
+    font-size: 50px; 
+    color: rgb(5, 150, 150);
+    font-weight: 600;
+
+}
+.heading-2{
+    font-family: tahoma;
+    font-size: 30px;
+    font-weight: 200;
+    color: rgb(5, 150, 150);
+}
+#experienceList{
+    font-family: cursive;
+    font-weight: 300;
+    color: salmon;
+}
+.skills-List{
+    font-family: Georgia;
+    font-weight: 0px;
+    color: slategray;
+}
+.leavemess{
+    font-family: cursive;
+    color: slategray;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 5px;
+   
+}
+
+label, input{
+    display:block
+}
+label{
+    margin-bottom:5px;
+    
+}
+
+#name_ip{
+    border-radius: 10px;
+}
+#email_ip{
+    border-radius: 10px
+}
+#leave_a_comment{
+    color: slategray;
+    border-radius: 10px;
+    
+}
+.listMessage{
+    font-size: small;
+    padding: 5px;
+    margin: 5px;
+    color: steelblue;
+    border: mediumorchid;
+    word-spacing: 5px;
+}
+#submit_button{
+    color: snow;
+    background-color: teal;
+    border-radius: 10px;
+    border: thistle;
+
+}
+#footer{
+    word-spacing: 2px;
+    background-color:brown ;
+    color: snow;
+}
+
+@media screen and (max-width: 767px){
+    body{
+        
+        background-color:snow;
+        color: darkslategray ;
+        font-size:smaller;
+        font-family:sans-serif;
+    }
+    .heading{
+        font-size: smaller;
+    }
+    .heading-2{
+        font-family: tahoma;
+        font-size: x-small;
+        font-weight: 200;
+        color: rgb(5, 150, 150);
+    }
+    #experienceList{
+        font-family: Arial;
+        font-weight: 300;
+        color: salmon;
+    }
+    .skills-List{
+        font-family: Georgia;
+        font-weight: 0px;
+        color: slategray;
+    }
+    .leavemess{
+        font-family: Arial;
+        color: slategray;
+        font-size: xx-small;
+        font-weight: 300;
+        padding: 5px;
+  
+        
+    }
+    .listMessage{
+        font-size: small;
+     }
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1024px){
+    body{
+        background-color:snow;
+        color: darkslategray ;
+        font-size:medium;
+        font-family:sans-serif;
+    }
+    .heading{
+        font-size: medium;
+    }
+    .heading-2{
+        font-family: tahoma;
+        font-size: smaller;
+        font-weight: 200;
+        color: rgb(5, 150, 150);
+    }
+    #experienceList{
+        font-family: Arial;
+        font-weight: 300;
+        color: salmon;
+    }
+    .skills-List{
+        font-family: Georgia;
+        font-weight: 0px;
+        color: slategray;
+    }
+    .leavemess{
+        font-family: Arial;
+        color: slategray;
+        font-size: x-small;
+        font-weight: 300;
+        padding: 5px;
+  
+        
+    }
+    .listMessage{
+        font-size: medium;
+     }
+    }
