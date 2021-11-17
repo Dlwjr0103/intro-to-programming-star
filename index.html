@@ -9,32 +9,36 @@
       <meta name="description" content="Dennis Portfolio">
       <meta name="author" content="Dennis Williams">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/index.css">
+      
   </head> 
   <body>
     <header>
-    <h1>
-    Dennis Williams 
-    </h1>
-    <ul>
+      <h1 class="heading">
+        Dennis Williams 
+      </h1>
+      <ul>
         <li><a href="#">home</a></li>
         <li><a href="#">about</a></li>
         <li><a href="#">contact</a></li>
-    </ul>
+      </ul>
     </header>
 
    <section>
-    <h2>About</h2>
-    <p>Hi, I'm Dennis. A software developer with a passion for solving complex problems. My background is in project management with a concentration in software implementation and cross functional collaberation.  Connect with me today - I'm always interested in making new professional acquaintances!</p>
+    <h2 class="heading-2">About</h2>
+    <p class="ptext">Hi, I'm Dennis. A software developer with a passion for solving complex problems. My background is in project management with a concentration in software implementation and cross functional collaberation.  Connect with me today - I'm always interested in making new professional acquaintances!</p>
 
-    <h2>Experience</h2>
-    North Carolina State Employees Credit Union
+    <h2 class="heading-2">Experience</h2>
+      <ul>
+        <li id="experienceList">North Carolina State Employees' Credit Union</li>
+      </ul>
 
    <section id = "skills">
-    <h2>Skills</h2>
-      <ul></ul>
+    <h2 class="heading-2">Skills</h2>
+      <ul class="skills-List"></ul>
 
    </section>
-    <h2>Connect</h2>
+    <h2 class="heading-2">Connect</h2>
     <ul>
       <li>Dennislwjr@gmail.com</li> 
       <li> <a href = "https://github.com/Dlwjr0103/intro-to-programming-star.git" target = "_blank" >https://github.com/Dlwjr0103</a></li>
@@ -42,13 +46,13 @@
     </section>
 
     <section>
-      <h2>Leave a Message</h2>
-        <form name="leave_message">
+      <h2 class="heading-2">Leave a Message</h2>
+        <form name="leave_message" class="leavemess">
 
           <label for="name">Name:</label><br>
-          <input type="text" name="name" required=true><br>
+          <input id="name_ip"type="text" name="name" required=true><br>
           <label for="email">Email:</label><br>
-          <input type="email" name="email" required=true><br>
+          <input id="email_ip" type="email" name="email" required=true><br>
           <label for="leave_a_comment">Leave a Message</label><br>
           <textarea name="message" id="leave_a_comment" required="true"></textarea><br>
           
@@ -57,12 +61,12 @@
     </section>
 
     <section id="messages">
-      <h2>Messages</h2>
-        <ul></ul>
+      <h2 class="heading-2">Messages</h2>
+        <ul class="listMessage"></ul>
 
     </section>
 
-    <footer></footer>
+    <footer id="footer"></footer>
     <script src="js\index.js"></script>
   </body>
 </html>
