@@ -13,32 +13,41 @@
       
   </head> 
   <body>
+    <div class="flex-container">
     <header>
       <h1 class="heading">
         Dennis Williams 
       </h1>
-      <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">contact</a></li>
-      </ul>
+      <nav>
+        <div class="navitem">
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#experience">experience</a></li>
+            <li><a href="#skills1">skills</a></li>
+            <li><a href="#connect">connect</a></li>
+            <li><a href="#leave_a_message">leave a message</a></li>
+            <li><a href="#messages">messages</a></li>
+          </div>
+        </ul>
+      </nav>
     </header>
+    </div>
 
    <section>
-    <h2 class="heading-2">About</h2>
+    <h2 class="heading-2" id="about">About</h2>
     <p class="ptext">Hi, I'm Dennis. A software developer with a passion for solving complex problems. My background is in project management with a concentration in software implementation and cross functional collaberation.  Connect with me today - I'm always interested in making new professional acquaintances!</p>
 
-    <h2 class="heading-2">Experience</h2>
-      <ul>
-        <li id="experienceList">North Carolina State Employees' Credit Union</li>
-      </ul>
-
+    <div class="grid-container">
+    <h2 id="experience" class="heading-2">Experience</h2>
+      <div id="experienceList" class="grid-item">North Carolina State Employees' Credit Union</div>
+      <div id="experienceList" class="grid-item">Code the Dream</div>
    <section id = "skills">
-    <h2 class="heading-2">Skills</h2>
+    <h2 id="skills1" class="heading-2">Skills</h2>
       <ul class="skills-List"></ul>
 
    </section>
-    <h2 class="heading-2">Connect</h2>
+    <h2 id="connect" class="heading-2">Connect</h2>
     <ul>
       <li>Dennislwjr@gmail.com</li> 
       <li> <a href = "https://github.com/Dlwjr0103/intro-to-programming-star.git" target = "_blank" >https://github.com/Dlwjr0103</a></li>
@@ -46,22 +55,29 @@
     </section>
 
     <section>
-      <h2 class="heading-2">Leave a Message</h2>
+      <div class="grid-container2">
+      <h2 id="leave_a_message" class="heading-2">Leave a Message</h2>
         <form name="leave_message" class="leavemess">
 
           <label for="name">Name:</label><br>
+          <div class="grid-item2">
           <input id="name_ip"type="text" name="name" required=true><br>
+          </div>
           <label for="email">Email:</label><br>
+          <div class="grid-item2">
           <input id="email_ip" type="email" name="email" required=true><br>
+          </div>
           <label for="leave_a_comment">Leave a Message</label><br>
+          <div class="grid-item2">
           <textarea name="message" id="leave_a_comment" required="true"></textarea><br>
-          
+          </div>
           <button type="submit" id="submit_button">Submit</button>
         </form>
+      </div>
     </section>
 
     <section id="messages">
-      <h2 class="heading-2">Messages</h2>
+      <h2 id="messages1"class="heading-2">Messages</h2>
         <ul class="listMessage"></ul>
 
     </section>
