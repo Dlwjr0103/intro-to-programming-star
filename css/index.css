@@ -25,6 +25,7 @@ nav li{
     display: inline;
     padding: 0; 
     padding-right: 1rem;
+    justify-content: flex-start;
     align-items: baseline;
 }
 nav a {
