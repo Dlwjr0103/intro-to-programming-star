@@ -52,20 +52,19 @@ var githubRequest = new XMLHttpRequest();
     
  githubRequest.addEventListener("load", function(){
      if (githubRequest.readyState === 4){
-      if (githubRequest.status ===200){
+     if (githubRequest.status ===200){
            console.log("ok")
-     let repositories = JSON.parse(this.response);
+      let repositories = JSON.parse(this.response);
       console.log(repositories);
 
+      const projectSection = document.querySelector('#projects')
+      const projectList = projectSection.querySelector('ul')
 
- const projectSection = document.querySelector('#projects')
- const projectList = projectSection.querySelector('ul')
+      for (let i = 0; i < repositories.length; i++){
 
- for (let i = 0; i < repositories.length; i++){
-
-     const project = document.createElement('li')
-     project.innerText= repositories[i].name;
-     projectList.appendChild(project)
+      const project = document.createElement('li')
+      project.innerText= repositories[i].name;
+      projectList.appendChild(project)
      }
     }
    }
