@@ -46,7 +46,7 @@ messageForm.addEventListener("submit", (event) => {
 
 );
  
-var githubRequest = new XMLHttpRequest();
+/* var githubRequest = new XMLHttpRequest();
      githubRequest.open("GET", "https://api.github.com/users/Dlwjr0103/repos"); 
      githubRequest.send();
     
@@ -69,4 +69,21 @@ var githubRequest = new XMLHttpRequest();
     }
    }
  })
+ */
+fetch("https://api.github.com/users/Dlwjr0103/repos")
+     .then((response) => response.json()) 
+     .then((repositories) => {
 
+      console.log(repositories);
+
+      const projectSection = document.querySelector('#projects')
+      const projectList = projectSection.querySelector('ul')
+
+      for (let i = 0; i < repositories.length; i++){
+
+      const project = document.createElement('li')
+      project.innerText= repositories[i].name;
+      projectList.appendChild(project)
+      }
+})
+     
