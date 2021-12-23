@@ -14,16 +14,20 @@ body{
 ::webkit-scrollbar{
     height: 10px;
 }
+
 ::-webkit-scrollbar-track{
     background:rgb(241, 243, 245);
 }
+
 ::-webkit-scrollbar-thumb{
     background: rgb(241, 243, 245);
-    border-radius: 10px;
+    border-radius: 20px;
 }
+
 ::-webkit-scrollbar-thumb:hover{
     background:rgb(5, 150, 150)
 }
+
 .flex-container{
     margin-bottom: 5rem;
     display: flex;
@@ -53,12 +57,14 @@ nav li{
     align-items: baseline;
     /*border-bottom: 1px solid black;*/
 }
+
 nav a {
     color: rgb(203, 211, 211);
     text-decoration: none;
     
     
 }
+
 nav a:hover{
     background: linear-gradient(.25turn,rgb(121, 141, 121),rgb(78, 138, 93),rgb(1, 97, 14))
     
@@ -77,10 +83,9 @@ nav a:hover{
     border-radius: 25px;
     display: inline-grid;
     grid-row-gap:1rem;
-    padding: 20px;
-    
-    
+    padding: 20px;    
  }   
+
 .grid-container2{
     
     display:inline-grid; 
@@ -90,25 +95,28 @@ nav a:hover{
     margin-right: 20px;
     
 }
+
 ul.grid-container3 {
     list-style-type: none;
 }
-
 
 #experienceList{
     font-family: cursive;
     font-weight: 200;
     color:slategray;
 }
+
 .skills-List{
     font-family: Georgia;
     font-weight: 0px;
     color: slategray;
 }
+
 #projects{
     
     color:rgb(5, 150, 150)
 }
+
 .leavemess{
     font-family: cursive;
     color: slategray;
@@ -122,6 +130,7 @@ ul.grid-container3 {
     display: inline-grid;
     grid-row-gap: 1rem;
 }
+
 .connect{
     display: none;
 }
@@ -129,6 +138,7 @@ ul.grid-container3 {
 label, input{
     display:block
 }
+
 label{
     margin-bottom:5px;
     
@@ -137,14 +147,16 @@ label{
 #name_ip{
     border-radius: 10px;
 }
+
 #email_ip{
     border-radius: 10px
 }
+
 #leave_a_comment{
     color: slategray;
     border-radius: 10px;
-    
 }
+
 .listMessage{
     font-size: small;
     padding: 5px;
@@ -153,6 +165,7 @@ label{
     border: mediumorchid;
     word-spacing: 5px;
 }
+
 #submit_button{
     color: snow;
     background-color: teal;
@@ -160,6 +173,7 @@ label{
     border: thistle;
 
 }
+
 #footer{
     word-spacing: 2px;
     background-color:brown ;
@@ -175,13 +189,10 @@ label{
    
     .navitem{
         display: none;
-        /*float: left;
-        font-size: smaller;*/
     }
 
     nav li{
         display: none;
-        /*float: left;*/
     }
     
     body{
@@ -191,9 +202,11 @@ label{
         font-size:smaller;
         font-family:sans-serif;
     }
+
     .heading{
         font-size: 2rem;
     }
+
     .heading-2{
         font-family: tahoma;
         font-size: 1rem;
@@ -207,28 +220,29 @@ label{
         font-weight: 200;
         color:slategray;
     }
+
     .skills-List{
         font-family: Georgia;
         font-weight: 0px;
         color: slategray;
     }
+
     .connect{
         display: inline-block;
     }
+
     .leavemess{
         font-family: Arial;
         color: slategray;
         font-size: xx-small;
         font-weight: 300;
         padding: 5px;
-  
-        
     }
+
     .listMessage{
         font-size: small;
      }
 }
-
 
 @media screen and (min-width: 768px) and (max-width:1024px){
     body{
@@ -237,26 +251,31 @@ label{
         font-size:medium;
         font-family:sans-serif;
     }
+
     .heading{
         float: left;
         font-size: medium;
     }
+
     .heading-2{
         font-family: tahoma;
         font-size: smaller;
         font-weight: 200;
         color: rgb(5, 150, 150);
     }
+
     #experienceList{
         font-family: Arial;
         font-weight: 300;
         color: slategray;
     }
+
     .skills-List{
         font-family: Georgia;
         font-weight: 0px;
         color: slategray;
     }
+
     .leavemess{
         font-family: Arial;
         color: slategray;
@@ -265,6 +284,7 @@ label{
         padding: 5px;
   
     }
+    
     .listMessage{
         font-size: medium;
      }
