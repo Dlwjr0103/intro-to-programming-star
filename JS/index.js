@@ -3,7 +3,7 @@ const thisYear = today.getFullYear();
 const footer = document.querySelector('footer')
 const copyright = document.createElement('p')
 
-copyright.innerHTML = "&copy; Dennis Williams " + thisYear ; 
+copyright.innerHTML = "&copy; Dennis Williams " + thisYear; 
 footer.appendChild(copyright);
 
 let skills = ['JavaScript','HTML','Project Management','CSS'];
