@@ -4,64 +4,110 @@ body{
     background-color:snow;
     color: darkslategray ;
     font-size: 20px;
-    font-family:sans-serif;
+    font-family:cursive;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::webkit-scrollbar{
+    height: 10px;
+}
+::-webkit-scrollbar-track{
+    background:rgb(241, 243, 245);
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(241, 243, 245);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:rgb(5, 150, 150)
+}
 .flex-container{
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: baseline;
 }
 
+.navitem{
+    overflow: hidden;
+    font-size: 1rem;
+    font-family: cursive
+}
 
 .heading{
+    float: left;
     font-family: cursive;
     font-size: 50px; 
     color: rgb(5, 150, 150);
     font-weight: 600;
 }
+
 nav li{
+    float: right; 
     display: inline;
     padding: 0; 
     padding-right: 1rem;
     align-items: baseline;
+    /*border-bottom: 1px solid black;*/
 }
 nav a {
-    color: black;
+    color: rgb(203, 211, 211);
     text-decoration: none;
-    border-bottom: 1px solid black;
+    
+    
 }
 nav a:hover{
     background: linear-gradient(.25turn,rgb(121, 141, 121),rgb(78, 138, 93),rgb(1, 97, 14))
+    
+
 }
 
-
-
-
-
 .heading-2{
-    font-family: tahoma;
+    font-family: cursive;
     font-size: 30px;
     font-weight: 200;
     color: rgb(5, 150, 150);
 }
 
 .grid-container{
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
     display: inline-grid;
     grid-row-gap:1rem;
+    padding: 20px;
+    
+    
+ }   
+.grid-container2{
+    
+    display:inline-grid; 
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding-right: 20px;
+    margin-right: 20px;
     
 }
+ul.grid-container3 {
+    list-style-type: none;
+}
+
 
 #experienceList{
     font-family: cursive;
-    font-weight: 300;
-    color: salmon;
+    font-weight: 200;
+    color:slategray;
 }
 .skills-List{
     font-family: Georgia;
     font-weight: 0px;
     color: slategray;
+}
+#projects{
+    
+    color:rgb(5, 150, 150)
 }
 .leavemess{
     font-family: cursive;
@@ -69,12 +115,15 @@ nav a:hover{
     font-size: 15px;
     font-weight: 300;
     padding: 5px;
-   
+   border-radius: 10px;
 }
 
 .grid-container2{
     display: inline-grid;
     grid-row-gap: 1rem;
+}
+.connect{
+    display: none;
 }
 
 label, input{
@@ -118,6 +167,23 @@ label{
 }
 
 @media screen and (max-width: 767px){
+
+    .flex-container{
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+   
+    .navitem{
+        display: none;
+        /*float: left;
+        font-size: smaller;*/
+    }
+
+    nav li{
+        display: none;
+        /*float: left;*/
+    }
+    
     body{
         
         background-color:snow;
@@ -126,23 +192,28 @@ label{
         font-family:sans-serif;
     }
     .heading{
-        font-size: smaller;
+        font-size: 2rem;
     }
     .heading-2{
         font-family: tahoma;
-        font-size: x-small;
+        font-size: 1rem;
         font-weight: 200;
         color: rgb(5, 150, 150);
+        
     }
+
     #experienceList{
         font-family: Arial;
-        font-weight: 300;
-        color: salmon;
+        font-weight: 200;
+        color:slategray;
     }
     .skills-List{
         font-family: Georgia;
         font-weight: 0px;
         color: slategray;
+    }
+    .connect{
+        display: inline-block;
     }
     .leavemess{
         font-family: Arial;
@@ -167,6 +238,7 @@ label{
         font-family:sans-serif;
     }
     .heading{
+        float: left;
         font-size: medium;
     }
     .heading-2{
@@ -178,7 +250,7 @@ label{
     #experienceList{
         font-family: Arial;
         font-weight: 300;
-        color: salmon;
+        color: slategray;
     }
     .skills-List{
         font-family: Georgia;
@@ -192,7 +264,6 @@ label{
         font-weight: 300;
         padding: 5px;
   
-        
     }
     .listMessage{
         font-size: medium;

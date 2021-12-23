@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <title>
-      Dennis Portfolio
+      Dennis' Portfolio
     </title>
       <meta charset="UTF-8">
       <meta name="keywords" content= "programming, JavaScript">
@@ -14,22 +15,24 @@
   </head> 
   <body>
     <div class="flex-container">
-    <header>
-      <h1 class="heading">
-        Dennis Williams 
-      </h1>
+    
+     
       <nav>
+        <h1 class = "heading">Dennis Williams</h1>
         <div class="navitem">
-          <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#experience">experience</a></li>
-            <li><a href="#skills1">skills</a></li>
-            <li><a href="#connect">connect</a></li>
-            <li><a href="#leave_a_message">leave a message</a></li>
-            <li><a href="#messages">messages</a></li>
+             <ul>
+              <li><a href="index.html">home</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#experience">experience</a></li>
+              <li><a href="#skills1">skills</a></li>
+              <li><a href="#connect">connect</a></li>
+              <li><a href="#leave_a_message">leave a message</a></li>
+              <li><a href="#messages">messages</a></li>
+            </ul>
           </div>
-        </ul>
+        </div>
+      
+        
       </nav>
     </header>
     </div>
@@ -40,28 +43,35 @@
 
     <div class="grid-container">
     <h2 id="experience" class="heading-2">Experience</h2>
-      <div id="experienceList" class="grid-item">North Carolina State Employees' Credit Union</div>
+      <div id="experienceList" class="grid-item">Finance</div>
       <div id="experienceList" class="grid-item">Code the Dream</div>
+    </div>
 
+    <div class="grid-container2">
    <section id = "skills">
     <h2 id="skills1" class="heading-2">Skills</h2>
       <ul class="skills-List"></ul>
     </section>
-
+    </div>
+    
+    <div class="grid-container3">
    <section id="projects">
-    <h2>Projects</h2>
-    <ul></ul>
-   
+    <h2 class="heading-2">Projects</h2>
+    <ul class="skills-List"></ul>
   </section>
+    </div>
+
+    <div class="grid-container4">
     <h2 id="connect" class="heading-2">Connect</h2>
     <ul>
-      <li>Dennislwjr@gmail.com</li> 
-      <li> <a href = "https://github.com/Dlwjr0103/intro-to-programming-star.git" target = "_blank" >https://github.com/Dlwjr0103</a></li>
+      <li class="skills-List">Dennislwjr@gmail.com</li> 
+      <li class="connect"> <a href = "https://github.com/Dlwjr0103/intro-to-programming-star.git" target = "_blank" >GitHub</a></li>
     </ul>
+    </div>
     </section>
 
     <section>
-      <div class="grid-container2">
+      <div class="grid-container5">
       <h2 id="leave_a_message" class="heading-2">Leave a Message</h2>
         <form name="leave_message" class="leavemess">
 
@@ -88,7 +98,23 @@
 
     </section>
 
-    <footer id="footer"></footer>
+    <footer id="footer">
+      <div class="container">
+        <nav class="nav">
+          <ul class="menu" role="list">
+            <li class="menu_item">
+              <a
+              href="https://github.com/dlwjr0103"
+              target="_blank"
+              title="GitHub"
+              >GitHub
+                
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </footer>
     <script src="js\index.js"></script>
   </body>
 </html>
